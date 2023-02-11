@@ -2,5 +2,9 @@ header{
     color: #1c2225;
 }
 body{
+    margin: auto;
     color: #232c31;
+}
+p,h1{
+    text-align: center;
 }
