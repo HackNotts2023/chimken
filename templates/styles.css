@@ -1,0 +1,32 @@
+html{
+    height:100%;
+    background-color: black;
+    color: white;
+}
+
+body{
+    margin: auto;
+    background-color: black;
+}
+
+h1{
+    display:inline;
+}
+
+.loginheader{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    padding-left: 0rem;
+    padding-right: 0rem;
+    overflow: hidden;
+    max-width: max-content;
+}
+
+p,h1,label{
+    text-align: center;
+    color: white;
+}
+
