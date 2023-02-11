@@ -1,6 +1,13 @@
-header{
-    color: #1c2225;
+.logintitle{
+    background-color: black;
+    color: white;
+    text-align: center;
 }
-body{
-    color: #232c31;
+
+html, header{
+    background-color: black;
+}
+
+.container-margin {
+    overflow: hidden;
 }
