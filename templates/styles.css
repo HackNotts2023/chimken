@@ -1,11 +1,14 @@
+html, div{
+    background-color: black;
+    color: white;
+}
+
 .logintitle{
+    vertical-align: center;
     background-color: black;
     color: white;
     text-align: center;
-}
-
-html, header{
-    background-color: black;
+    font-size: 400%;
 }
 
 .container-margin{
