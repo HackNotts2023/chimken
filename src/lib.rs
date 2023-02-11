@@ -11,5 +11,6 @@ pub mod ui;
 #[shuttle_service::main]
 async fn axum() -> ShuttleAxum {
     Ok(SyncWrapper::new(Router::new()
-        .route("/", routing::get(ui::index))))
+        .route("/", routing::get(ui::index))
+        .route("/static/*path", routing::get(ui::statics))))
 }
