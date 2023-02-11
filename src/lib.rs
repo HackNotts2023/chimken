@@ -1,5 +1,5 @@
 use axum::response::Html;
 
 pub async fn index() -> Html<&'static str> {
-    Html("Hello world!")
+    Html(include_str!("../templates/index.html"))
 }
