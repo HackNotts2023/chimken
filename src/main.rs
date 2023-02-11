@@ -10,7 +10,7 @@ async fn main() -> AnyResult<()> {
         .route("/", routing::get(hnproject::index))
         .into_make_service();
 
-    Server::bind(&"0.0.0.0:3000".parse()?)
+    Server::try_bind(&"0.0.0.0:3000".parse()?)?
         .serve(app)
         .await?;
     
