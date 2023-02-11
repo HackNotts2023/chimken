@@ -8,6 +8,15 @@ html, header{
     background-color: black;
 }
 
-.container-margin {
+.container-margin{
     overflow: hidden;
+    background-color: black;
+}
+
+body{
+    margin: auto;
+    color: #232c31;
+}
+p,h1{
+    text-align: center;
 }
