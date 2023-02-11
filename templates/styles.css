@@ -3,16 +3,8 @@ html, div{
     color: white;
 }
 
-.logintitle{
-    vertical-align: center;
-    background-color: black;
-    color: white;
+.loginheader{
     text-align: center;
-    font-size: 400%;
-}
-
-header{
-    background-color: rgb(42, 41, 47);
 }
 
 .container{
