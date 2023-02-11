@@ -11,15 +11,19 @@ html, div{
     font-size: 400%;
 }
 
+header{
+    background-color: rgb(42, 41, 47);
+}
+
 .container-margin{
     overflow: hidden;
-    background-color: black;
 }
 
 body{
     margin: auto;
-    color: #232c31;
+    background-color: black;
 }
-p,h1{
+p,h1,label{
     text-align: center;
+    color: white;
 }
