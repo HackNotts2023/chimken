@@ -15,8 +15,11 @@ header{
     background-color: rgb(42, 41, 47);
 }
 
-.container-margin{
+.container{
+    padding-left: 0rem;
+    padding-right: 0rem;
     overflow: hidden;
+    max-width: max-content;
 }
 
 body{
