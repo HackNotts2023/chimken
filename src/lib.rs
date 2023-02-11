@@ -1,7 +1,15 @@
-use axum::response::Html;
+use axum::Router;
+use axum::routing;
+
+use shuttle_service::ShuttleAxum;
+
+use sync_wrapper::SyncWrapper;
 
 pub mod db;
+pub mod ui;
 
-pub async fn index() -> Html<&'static str> {
-    Html(include_str!("../templates/index.html"))
+#[shuttle_service::main]
+async fn axum() -> ShuttleAxum {
+    Ok(SyncWrapper::new(Router::new()
+        .route("/", routing::get(ui::index))))
 }

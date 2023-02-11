@@ -18,6 +18,7 @@ const USER_COLLECTION: &str = "users";
 
 #[derive(Debug, Clone, Eq, Serialize, Deserialize)]
 pub struct User {
+    #[serde(rename = "_id")]
     id: Id,
     name: String,
     bio: String,
@@ -53,7 +54,7 @@ impl User {
             .await
     }
 
-    pub async fn following_list(&self, client: &Client) -> Result<Cursor<User>, DbError> {
+    pub async fn following(&self, client: &Client) -> Result<Cursor<User>, DbError> {
         client.database(DATABASE)
             .collection(USER_COLLECTION)
             .find(bson::doc! {
@@ -64,7 +65,7 @@ impl User {
             .await
     }
 
-    pub async fn followers_list(&self, client: &Client) -> Result<Cursor<User>, DbError> {
+    pub async fn followers(&self, client: &Client) -> Result<Cursor<User>, DbError> {
         client.database(DATABASE)
             .collection(USER_COLLECTION)
             .find(bson::doc! {
