@@ -1,6 +1,17 @@
-html, div{
+html{
+    height:100%;
     background-color: black;
     color: white;
+}
+
+body{
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fget.pxhere.com%2Fphoto%2Frestaurant-food-cooking-plate-seafood-fire-campfire-cuisine-chef-cook-hot-service-souse-636624.jpg&f=1&nofb=1&ipt=2f0c6cd3bab6393253cfdeabb8235f4893084b272ef598fe07d018179cb7c753&ipo=images") no-repeat;
+    margin: auto;
+    background-color: black;
+}
+
+h1{
+    display:inline;
 }
 
 .loginheader{
@@ -15,11 +26,8 @@ html, div{
     max-width: max-content;
 }
 
-body{
-    margin: auto;
-    background-color: black;
-}
 p,h1,label{
     text-align: center;
     color: white;
 }
+
