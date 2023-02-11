@@ -7,6 +7,7 @@ const USER_COLLECTION: &str = "users";
 
 #[derive(Debug, Clone, Eq, Serialize, Deserialize)]
 pub struct User {
+    #[serde(rename = "_id")]
     id: Id,
     name: String,
     bio: String,
